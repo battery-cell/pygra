@@ -1,0 +1,49 @@
+Oto kompletny opis Twojej gry, łączący mechanikę symulatora fizycznego z głębią chemiczną inspirowaną SS14.
+Tytuł Roboczy: Chem-Lab Chaos
+
+Gatunek: Symulator fizyczny / Gra logiczna / Zarządzanie czasem
+Perspektywa: Pierwsza osoba (FPP) z interaktywnym, fizycznym stołem laboratoryjnym.
+1. Cel Gry
+
+Wcielasz się w podziemnego chemika realizującego zlecenia dla podejrzanych klientów. Twoim zadaniem jest synteza rzadkich reagentów przy użyciu prymitywnego sprzętu, gdzie jeden fałszywy ruch ręką (lub upuszczenie butelki) może doprowadzić do katastrofy.
+2. Główna Pętla Rozgrywki (The Loop)
+Krok 1: Przyjęcie zlecenia
+
+Na Twój terminal spływają zamówienia. Każde zawiera:
+
+    Produkt docelowy: (np. Kwas Chlorowodorowy, Niestabilny Izotop, Lek na ból zęba).
+
+    Wymaganą czystość: Procentowy udział właściwej substancji w butelce.
+
+    Deadline: Czas, po którym klient rezygnuje (fizyczny zegar tykający na ścianie).
+
+Krok 2: Proces produkcji
+
+To serce gry, oparte na fizyce i precyzji:
+
+    Logistyka: Musisz fizycznie podejść do Dyspensera, chwycić butelkę i ustawić ją precyzyjnie pod kurkiem. Jeśli butelka nie stoi prosto, substancja rozlewa się na stół, tworząc śliską plamę lub żrące opary.
+
+    Mieszanie: Przelewasz składniki między butelkami. Fizyka decyduje o tym, jak szybko płyn się przemieszcza i czy nie "wychlapiesz" go przy gwałtownym ruchu.
+
+    Termoregulacja:
+
+        Palnik (Bunsen Burner): Kładziesz butelkę na ruszcie. Podgrzewa on ciecz, co inicjuje reakcje chemiczne. Musisz pilnować temperatury (T) – zbyt długa ekspozycja powoduje pęknięcie szkła i utratę całej zawartości.
+
+        Chłodnik (Cryo-Tray): Służy do stabilizacji substancji. Uwaga: Jeśli włożysz tam butelkę prosto z palnika, następuje szok termiczny – szkło hartuje się zbyt szybko lub rozpada w drobny mak.
+
+Krok 3: Dostawa i Ocena
+
+Gotową butelkę stawiasz w strefie wysyłki. Gra analizuje:
+
+    Skład: Czy udało Ci się uzyskać właściwy reagent?
+
+    Stan opakowania: Czy butelka jest brudna/nadpęknięta?
+
+    Czas: Szybkość realizacji premiuje Cię dodatkowymi kredytami.
+
+3. Wyposażenie Laboratorium i Zagrożenia
+Element	Funkcja	Ryzyko Fizyczne
+Dyspenser	Podaje czyste bazy (Woda, Etanol, Kwas).	Błąd celowania = skażenie stołu i utrata surowców.
+Palnik	Inicjuje reakcje endotermiczne.	Eksplozja oparów lub pęknięcie przegrzanej butelki.
+Chłodnik	Hamuje gwałtowne reakcje.	Rozpad szkła przy zbyt dużej różnicy temperatur.
+Stół roboczy	Przestrzeń do pracy.	Po upadku butelki staje się śliski/niebezpieczny.
