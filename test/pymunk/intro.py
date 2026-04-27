@@ -8,7 +8,7 @@ space.gravity = (0, 900)
 b0 = space.static_body
 
 class App:
-    size = 700, 240
+    size = 1024, 768
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode(self.size)
@@ -69,7 +69,7 @@ def add_boundaries(space, width, height, thickness=5):
 
     for wall in walls:
         wall.elasticity = 0.9
-        wall.friction = 0.8
+        wall.friction = 1.0
 
     space.add(*walls)
 
@@ -81,6 +81,7 @@ if __name__ == '__main__':
     body.position = (100, 100)
     box = pymunk.Poly.create_box(body, (50,50))
     box.elasticity = 0.01
+    box.friction=1.0
     space.add(body, box, segment)
     body.angular_velocity = 0
     body.angular_velocity_limit = 0
